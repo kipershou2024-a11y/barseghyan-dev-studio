@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barseghyan Dev Studio — Разработка сайтов и ботов</title>
+  <meta name="description" content="Разрабатываем сайты, интернет-магазины, веб-приложения и Telegram-ботов под ключ. Чистый код, сроки, поддержка." />
+  <style>
+    :root { --bg:#0b0f19; --card:#151b2b; --accent:#4f8cff; --accent2:#22d3a5; --text:#e8edf7; --muted:#94a3b8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+    header { padding:80px 0 60px; text-align:center; background:radial-gradient(60% 60% at 50% 0%, rgba(79,140,255,.25), transparent); }
+    h1 { font-size:clamp(28px,5vw,52px); font-weight:800; letter-spacing:-.5px; }
+    h1 span { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .sub { color:var(--muted); font-size:clamp(15px,2vw,19px); margin:18px auto 32px; max-width:640px; }
+    .cta { display:inline-block; background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#05121f; font-weight:700; padding:15px 30px; border-radius:12px; font-size:17px; transition:transform .15s ease; }
+    .cta:hover { transform:translateY(-2px); }
+    section { padding:60px 0; }
+    h2 { font-size:clamp(22px,3.5vw,34px); margin-bottom:28px; text-align:center; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+    .card { background:var(--card); border:1px solid #1e2740; border-radius:16px; padding:26px; }
+    .card h3 { font-size:19px; margin-bottom:8px; }
+    .card .price { color:var(--accent2); font-weight:700; margin-top:12px; }
+    .card p { color:var(--muted); font-size:15px; }
+    ul.feats { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+    ul.feats li { background:var(--card); border-radius:12px; padding:16px 18px; border:1px solid #1e2740; }
+    ul.feats li::before { content:"✓"; color:var(--accent2); font-weight:700; margin-right:10px; }
+    footer { text-align:center; padding:50px 0 30px; color:var(--muted); border-top:1px solid #1e2740; }
+    .badge { display:inline-block; font-size:13px; color:var(--muted); border:1px solid #1e2740; padding:6px 14px; border-radius:20px; margin-bottom:22px; }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="badge">Senior Fullstack • 10+ лет опыта</div>
+    <h1>Создаём <span>сайты, приложения и ботов</span> под ключ</h1>
+    <p class="sub">Лендинги, интернет-магазины, SaaS и Telegram-боты. Чистый код, соблюдение сроков, поддержка после запуска.</p>
+    <a class="cta" href="https://t.me/zarobotokAI_univers_bot" target="_blank" rel="noopener">Оставить заявку в Telegram</a>
+  </header>
+
+  <section class="wrap">
+    <h2>Услуги и цены</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Лендинг / сайт-визитка</h3>
+        <p>Современный адаптивный сайт, форма заявок, подключение аналитики.</p>
+        <div class="price">от $300</div>
+      </div>
+      <div class="card">
+        <h3>Интернет-магазин</h3>
+        <p>Каталог, корзина, онлайн-оплата, админ-панель, интеграции.</p>
+        <div class="price">от $800</div>
+      </div>
+      <div class="card">
+        <h3>Веб-приложение / SaaS</h3>
+        <p>Личные кабинеты, роли, API, база данных, безопасность.</p>
+        <div class="price">от $1500</div>
+      </div>
+      <div class="card">
+        <h3>Telegram-бот / автоматизация</h3>
+        <p>Боты, парсеры, интеграции с CRM и рассылки.</p>
+        <div class="price">от $400</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Почему мы</h2>
+    <ul class="feats">
+      <li>Чистый, модульный и документированный код</li>
+      <li>Соблюдение сроков и прозрачные этапы</li>
+      <li>Безопасность: защита от SQL-инъекций, XSS, CSRF</li>
+      <li>Поддержка и сопровождение после запуска</li>
+      <li>Прямая связь без посредников</li>
+      <li>Фиксированная смета до старта работ</li>
+    </ul>
+  </section>
+
+  <footer class="wrap">
+    <p>Barseghyan Dev Studio © <span id="y"></span></p>
+    <p style="margin-top:8px;"><a class="cta" href="https://t.me/zarobotokAI_univers_bot" target="_blank" rel="noopener">Написать в Telegram</a></p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
