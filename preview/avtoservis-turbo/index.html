@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Автосервис «Турбо»</title>
+  <meta name="description" content="Ремонт авто быстро, честно и с гарантией" />
+  <style>
+    :root { --accent:#f59e0b; --bg:#0b0f19; --card:#151b2b; --text:#e8edf7; --muted:#94a3b8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:1100px; margin:0 auto; padding:0 20px; }
+    header { padding:90px 0 60px; text-align:center; background:radial-gradient(60% 70% at 50% 0%, #f59e0b44, transparent); }
+    h1 { font-size:clamp(30px,5vw,54px); font-weight:800; letter-spacing:-.5px; }
+    .sub { color:var(--muted); font-size:clamp(16px,2vw,20px); margin:18px auto 30px; max-width:660px; }
+    .cta { display:inline-block; background:var(--accent); color:#06121f; font-weight:700; padding:15px 32px; border-radius:12px; font-size:17px; }
+    .phone { display:block; margin-top:14px; color:var(--muted); }
+    section { padding:60px 0; }
+    h2 { font-size:clamp(22px,3.5vw,34px); margin-bottom:28px; text-align:center; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+    .card { background:var(--card); border:1px solid #1e2740; border-radius:16px; padding:26px; }
+    .card h3 { font-size:19px; margin-bottom:8px; }
+    .card p { color:var(--muted); font-size:15px; }
+    .card .price { color:var(--accent); font-weight:700; margin-top:12px; }
+    ul.feats { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    ul.feats li { background:var(--card); border-radius:12px; padding:16px 18px; border:1px solid #1e2740; }
+    ul.feats li::before { content:"✓"; color:var(--accent); font-weight:700; margin-right:10px; }
+    footer { text-align:center; padding:50px 0 30px; color:var(--muted); border-top:1px solid #1e2740; }
+    .float { position:fixed; right:20px; bottom:20px; background:var(--accent); color:#06121f; font-weight:700; padding:14px 22px; border-radius:50px; box-shadow:0 8px 24px rgba(0,0,0,.4); }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <h1>Автосервис «Турбо»</h1>
+    <p class="sub">Ремонт авто быстро, честно и с гарантией</p>
+    <a class="cta" href="tel:+7 (900) 111-11-11">Записаться на ремонт</a>
+    <a class="phone" href="tel:+7 (900) 111-11-11">📞 +7 (900) 111-11-11 · Москва</a>
+  </header>
+  <section class="wrap">
+    <h2>Услуги и цены</h2>
+    <div class="grid">
+      <div class="card"><h3>Диагностика</h3><p>Компьютерная диагностика всех систем.</p><div class="price">от 1 000 ₽</div></div>
+      <div class="card"><h3>Замена масла</h3><p>За 30 минут, любое авто.</p><div class="price">от 1 500 ₽</div></div>
+      <div class="card"><h3>Ремонт двигателя</h3><p>Капитальный и текущий ремонт.</p><div class="price">от 15 000 ₽</div></div>
+      <div class="card"><h3>Шиномонтаж</h3><p>Сезонная смена и хранение шин.</p><div class="price">от 2 000 ₽</div></div>
+    </div>
+  </section>
+  <section class="wrap">
+    <h2>Почему выбирают нас</h2>
+    <div class="grid">
+      <div class="card"><h3>Опыт 12 лет</h3><p>Мастера с профильным образованием.</p></div>
+      <div class="card"><h3>Честные цены</h3><p>Без навязанных услуг.</p></div>
+      <div class="card"><h3>Быстро</h3><p>Большинство работ — в день обращения.</p></div>
+    </div>
+  </section>
+  <section class="wrap">
+    <h2>Преимущества</h2>
+    <ul class="feats">
+<li>Гарантия на работы</li>
+<li>Оригинальные запчасти</li>
+<li>Работаем 7 дней в неделю</li>
+<li>Выездная диагностика</li>
+    </ul>
+  </section>
+  <footer class="wrap">
+    <p>Автосервис «Турбо» · Москва</p>
+    <p>© <span id="y"></span></p>
+  </footer>
+  <a class="float" href="https://t.me/zarobotokAI_univers_bot" target="_blank" rel="noopener">Записаться на ремонт</a>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
